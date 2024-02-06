@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <h1 class="text-center">Detect Brain Tumor</h1>
+    <form class="p-3 text-center" action='/', method="post" enctype="multipart/form-data">
+        <input class="form-control" type="file" name="imagefile">
+        <input class="btn btn-primary mt-3" type="submit" value="Predict">
+    </form>
+    <div id="result"></div>
+   <!--- <div>
+        <h1 class="text-center"> Real Time Vital Updates</h1>
+       <h1> <p>Blood Oxygen Levels:{{v_1}}</p></h1>
+       <h1> <p>Pulse Rate:{{v_2}}</p></h1>
+        <h1> <p>Temperature:{{v_3}}</p></h1>
+    </div> -->
+
+    <div class="container">
+        <h1 class="text-center"> Real Time Vital Updates</h1>
+        <div class="value-box">
+            <h2><p>Blood Oxygen Levels: {{v_1}} </p></h2>
+        </div>
+        <div class="value-box">
+            <<h2> <p>Pulse Rate:{{v_2}}</p></h2>
+        </div>
+        <div class="value-box">
+            <h2> <p>Temperature:{{v_3}}</p></h2>
+        </div>
+    </div>
+
+   <script>
+        document.querySelector('form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const response = await fetch('/', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            document.getElementById('result').innerHTML = `
+                <p>Predicted Class: ${data.class}</p>
+                <p>Confidence: ${data.confidence}%</p>
+            `;
+        });
+
+        {/*i want you to make 3 variables beside names*/}
+
+    </script>
+</body>
+</html>
