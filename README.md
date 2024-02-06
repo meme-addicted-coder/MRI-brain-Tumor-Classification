@@ -9,6 +9,6 @@ This dataset contains 7023 images of human brain MRI images which are classified
 
 ![image](https://github.com/meme-addicted-coder/MRI-brain-Tumor-Classification/assets/91499323/80e0eac8-f326-4d0b-b7e9-40da2152f755)
 
-Accuracy:
-![Uploading image.png…]()
+![image](https://github.com/meme-addicted-coder/MRI-brain-Tumor-Classification/assets/91499323/9ebf7f90-d028-4b61-9e09-ff44a2f30e35)
+
 
