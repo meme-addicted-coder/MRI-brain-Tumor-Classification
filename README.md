@@ -1,6 +1,7 @@
 # MRI-brain-Tumor-Classification
 Early detection and classification of brain tumors is an important research domain in the field of medical imaging and accordingly helps in selecting the most convenient treatment method to save patients life therefore.
-This is a part of the project https://devfolio.co/projects/visionary-diagnostics-5540 for Diversion'24.
+
+This is a SUB part of the project https://devfolio.co/projects/visionary-diagnostics-5540 for Diversion'24.
 
 #DATASET USED:
 https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
