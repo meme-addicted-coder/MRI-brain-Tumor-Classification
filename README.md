@@ -8,3 +8,7 @@ https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 This dataset contains 7023 images of human brain MRI images which are classified into 4 classes: glioma - meningioma - no tumor and pituitary.
 
 ![image](https://github.com/meme-addicted-coder/MRI-brain-Tumor-Classification/assets/91499323/80e0eac8-f326-4d0b-b7e9-40da2152f755)
+
+Accuracy:
+![Uploading image.png…]()
+
